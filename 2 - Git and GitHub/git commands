@@ -2,7 +2,18 @@ Initialising git repository
 - git init
 
 Add to staging area
-- git add.
+- git add .
 
 Make it another version
 - git commit -m "[Message Description]"
+
+Show history of commits
+- git log
+
+Show history of commits of one line only
+- git log --oneline
+
+Legend in git repository; changes in colours and below words will be displayed
+U - Untracked
+A - Added
+M - Modified
