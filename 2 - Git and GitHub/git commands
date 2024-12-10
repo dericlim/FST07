@@ -1,0 +1,8 @@
+Initialising git repository
+- git init
+
+Add to staging area
+- git add.
+
+Make it another version
+- git commit -m "[Message Description]"
