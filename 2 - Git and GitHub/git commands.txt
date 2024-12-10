@@ -17,3 +17,15 @@ Legend in git repository; changes in colours and below words will be displayed
 U - Untracked
 A - Added
 M - Modified
+
+Check on the working tree / status of our commit
+- git status
+
+Creating a branch
+- git branch [branchname]
+
+List all the branches
+- git branch -a
+
+Switch to another branch
+- git checkout [branchname]
