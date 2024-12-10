@@ -1,0 +1,20 @@
+Create a directory / folder
+- mkdir
+
+Remove a directory / folder
+- rmdir
+
+Changing directory / folder
+- cd [directory / folder name]
+
+Go back to the previous folder
+- cd..
+
+Creating a file
+- touch [filename.extension]
+
+Remove a file
+- rm [filename.extension]
+
+Clearing the terminal
+- clear
