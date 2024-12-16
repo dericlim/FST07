@@ -1,0 +1,89 @@
+#text-styling{
+    /* Default: Times New Roman */
+    font-family: Arial, Helvetica, sans-serif; 
+    /* the 2nd and 3rd are 'fallback' in case first one not available */
+
+    /* Not all font keywords and numbers are supported by a particular font-family */
+    
+    /* Font-weight keywords */
+    font-weight: bold;
+    font-weight: lighter;
+    font-weight: bolder;
+    font-weight: normal;
+
+    /* Font-weight number-value */
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600; 
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 950;
+
+    /* Text alignment */
+    text-align: right;
+    text-align: center;
+    text-align: left;
+
+    /* Font-style emphasis */
+    font-style: italic;
+    font-style: oblique;
+    font-style: normal;
+
+    /* Letter spacing */
+    letter-spacing: -2px;
+    letter-spacing: 2px;
+    letter-spacing: normal;
+
+    /* line height: add space bottom and top of the text */
+    line-height: 40px;
+    line-height: 2;
+    line-height: 200%;
+}
+
+#text-decoration{
+
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;
+    text-decoration: underline;
+
+    text-decoration-style: double;
+    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: wavy;
+
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+
+    text-decoration: underline dotted red 5px;
+}
+
+#colors{
+
+    color: green;
+    background-color: grey;
+
+    /* RGB: RED GREEN BLUE, 0-255 each*/
+    color: rgb(0,180,255); 
+    /* rgba (a for alpha): add opacity (fully visible to transparent 1 to 0 */
+    background-color: rgba(0,0,0,0.5);
+}
+
+#absolute-unit-px{
+    font-size: 30px;
+}
+
+#relative-unit-em{
+    /* parent px in template is 20px, 2em will multiply by 2 */
+    font-size: 2em;
+}
+
+#relative-unit-rem{
+    /* rem stands for root element */
+    /* root in this case is html (at the top), where its default font size is 16px, 2rem will multiply by 2 */
+    font-size: 2rem;
+}

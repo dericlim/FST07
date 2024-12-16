@@ -1,0 +1,35 @@
+.intro-paragraphs{
+    color: blue;
+}
+
+span{
+    color: green;
+}
+
+#main-heading{
+    font-weight: bold;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* grouping selectors */
+h1,h2,.about-content{
+    color: tomato;
+}
+
+/* target the parent, followed by the child p */
+.article-container p{
+    color: red;
+}
+
+/* pseudo class  :xxx */
+a:hover{
+    color: green;
+}
+
+/* pseudo class: active - click and something happen */
+a:active{
+    color: yellow;
+}

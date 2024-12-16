@@ -1,0 +1,49 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    /* create number of columns and width */
+    grid-template-rows: 200px 200px 200px 200px;
+
+    /* using fractional units */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* repeat (number of columns, dimension unit */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Media Queries */
+/* 
+    Mobile Devices: Less than 481px
+    iPads, Tablets: 481px - 768px
+    Small Screens, Laptops: 769px - 1024px
+    Desktops, Large Screens: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and greater
+*/
+
+/* mobile or desktop first approach */
+/* break points */
+
+
+/* apply style based on user device */
+/* this case, it's a desktop first approach */
+/* in this case, once it hits beyond 1025px, 6 columns will appear */
+@media screen and (min-width: 1025px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }  
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }  
+}
+
+@media screen and (max-width: 480px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

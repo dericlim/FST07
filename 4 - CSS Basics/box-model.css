@@ -1,0 +1,58 @@
+.box1{
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.box2{
+    /* Only 1 value: All sides */
+    padding: 10px;
+    /* 2 values: Top Bottom / Right Left */
+    padding: 10px 20px;
+    /* 3 values: Top / RIGHT LEFT / BOTTOM */
+    padding: 10px 20px 30px;
+    /* 4 values: TOP / RIGHT / BOTTOM / LEFT (clockwise) */
+    padding: 10px 20px 30px 40px;
+}
+
+.box3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.box4{
+    margin: 10px;
+    margin: 10px 20px;
+    margin: 10px 20px 30px;
+    margin: 10px 20px 30px 40px;
+}
+
+.mix-borders{
+    background-color: green;
+    height: 80px;
+    width: 120px;
+    text-align: center;
+    border-style: solid;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+
+    border-width: 8px;
+    border-color: tomato;
+
+    /* SHORT HAND */
+    border: dashed 5px blue;
+}
+
+.circle-container{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border-radius: 30%;
+}

@@ -1,0 +1,48 @@
+.flexContainer {
+    display: flex;
+    /* main (x-axis), cross (y-axis) */
+    flex-direction: column;
+    /* rarely used. y axis becomes main */
+    flex-direction: row;
+    /* commonly used */
+    
+    /* sets alignment on main axis */
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    /* default mode is flex-start. left of main axis. end means right, center */
+    justify-content: space-between;
+    /* adds space between the elements */
+    justify-content: space-around;
+    /* adds space around outside elements, but space around is skewed, hence space-evenly*/
+    justify-content: space-evenly;
+    justify-content: flex-start;
+
+    align-items: stretch;
+    /* by default is stretch, literally */
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+
+    /* expand browser, the images will change accordingly (responsive design) */
+    /* under inspect, there's a mobile phone icon to see responsive design. Sliders at the bottom and right to adjust width and height, also can select devices under dimensions (though recommneded is Repsonsive */
+
+    flex-wrap: nowrap; 
+    /* default */
+    flex-wrap: wrap;
+    /* preserve the original properties ie. width of element, order of elements etc */
+    flex-wrap: wrap-reverse;
+    /* order of elements reversed */
+    flex-wrap: nowrap; 
+}
+
+.flexItem2 {
+    flex-shrink: 1;
+    /* default. elements will shrink accordingly if page width reduced. */
+    flex-shrink: 0;
+    /* this particular eleemnt will not shrink */
+    flex-grow: 0;
+    /* default. elements will not grow once their original dimension is reached */
+    flex-grow: 1;
+}

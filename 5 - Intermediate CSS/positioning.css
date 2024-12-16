@@ -1,0 +1,36 @@
+#relative{
+    background-color: aqua;
+    position: relative;
+    /* by default is static, by setting to relative, we can have access to top, left, right, bottom */
+    /* relative references from the point of its static position */
+    top: 40px;
+}
+
+#absolute{
+    background-color: tomato;
+    position: absolute;
+}
+/* when position set to absolute (it sort of gets removed from the doc flow), the next element below takes over its place */
+/* also now can access top, left, right, bottom positions*/
+/* references from the point of its ancestor (provided it's not set to static)*/
+
+/* if ancestor position set to static, the 'ancestor' starting point would be the viewport ie. top of the website */
+
+#fixed{
+    background-color: burlywood;
+    position: fixed;
+    /* the element will be removed from doc flow; and no access to top,left,right,bottom */
+    /* when u scroll the page, the element will always remain there */
+    /* references from the viewport */
+    bottom: 0px;
+    right: 0px;
+}
+
+#sticky{
+    background-color: chartreuse;
+    position: sticky;
+    /* access to top, right, left, bottom */
+    /* references from the viewport */
+    top: 0px;
+    /* in the case, it 'sticks to that position when we scroll until that position is reached (and the element will stop moving) */
+}
